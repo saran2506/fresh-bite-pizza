@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fresh Bite Pizza</title>
+  <style>
+    :root {
+      --main-red: #c0392b;
+      --main-green: #27ae60;
+      --background: #fffaf5;
+      --text-dark: #333;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--background);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+    header {
+      background-color: var(--main-red);
+      padding: 1em;
+      color: white;
+      text-align: center;
+    }
+    header img {
+      max-width: 120px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5em;
+      background: var(--main-green);
+      padding: 0.75em;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2em;
+    }
+    h2 {
+      margin-bottom: 1em;
+      color: var(--main-red);
+    }
+    .menu-section {
+      margin-bottom: 2em;
+    }
+    .menu-section h3 {
+      margin-top: 1.5em;
+      color: var(--main-green);
+    }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+    }
+    .contact-info p, .about-content p {
+      margin: 0.5em 0;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="l7.png" alt="Fresh Bite Pizza Logo" />
+    <h1>Fresh Bite Pizza</h1>
+    <p><em>Study. Slice. Repeat</em></p>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#order">Order Online</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to Fresh Bite Pizza</h2>
+    <p>We’re your new neighborhood pizza stop in State College! Whether you're studying late or just hungry for quality pizza, we’ve got you covered with a vibrant menu and cozy vibes.</p>
+  </section>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+
+    <div class="menu-section">
+      <h3>Regular Pizzas</h3>
+      <p>Cheese: $14 (Lg) / $18 (XXL)</p>
+      <p>Pepperoni: $14 / $19</p>
+      <p>BBQ Chicken: $15 / $20.99</p>
+      <p>Buffalo Chicken: $15 / $20.99</p>
+      <p>Veggie Lover: $15 / $22.99</p>
+      <p>Meat Lover: $15 / $20.99</p>
+      <p>Chicken Bacon Ranch: $15 / $20.99</p>
+      <p>Mac & Cheese: $15 / $20.99</p>
+      <p>Tomato Pesto: $15 / $20.99</p>
+      <p>White Pizza: $15 / $20.99</p>
+
+      <h3>Toppings</h3>
+      <p><strong>Veggies ($2):</strong> Extra cheese, mushroom, onions, black olives, pineapple, mango, spinach, tomatoes, jalapeño, banana peppers, cherry peppers, green peppers</p>
+      <p><strong>Meat ($3):</strong> Pepperoni, halal pepperoni, sausage, meatballs, chicken, bacon</p>
+    </div>
+
+    <div class="menu-section">
+      <h3>Specialty Pizzas - Large $16.99</h3>
+      <ul>
+        <li>Margherita</li>
+        <li>Hot Honey</li>
+        <li>Blanco Verde</li>
+        <li>Jalapeño Mango Chicken</li>
+        <li>Garden & Garden</li>
+        <li>Picante Pie (Spicy)</li>
+        <li>Lemon Chicken</li>
+        <li>Bazooka Launcher</li>
+        <li>Chicken Pesto</li>
+        <li>Chicken Habanero Dorito</li>
+      </ul>
+    </div>
+
+    <div class="menu-section">
+      <h3>Detroit Style Pizzas</h3>
+      <p>Hot Honey Pepperoni: $16/$22</p>
+      <p>Chicken Bacon Ranch: $13/$19</p>
+      <p>Classic Cheese: $11/$17</p>
+      <p>BBQ Chicken: $13/$19</p>
+      <p>AK47 Pizza: $16/$22</p>
+      <p>Classic Pepperoni: $13/$19</p>
+      <p>Vodka Pizza: $14/$20</p>
+      <p>Fresh Tomatoes & Garlic: $14/$20</p>
+    </div>
+
+    <div class="menu-section">
+      <h3>Sandwiches & Paninis - $12.99</h3>
+      <ul>
+        <li>Buffalo Panini</li>
+        <li>Protein Panini</li>
+        <li>Mac N' Cheese Buffalo Chicken</li>
+        <li>Vodka Grey Goose</li>
+        <li>Eggplant Parm Panini</li>
+        <li>Mac N' Cheese Panini</li>
+        <li>Piccante Pollo</li>
+        <li>Tomato & Mozzarella</li>
+        <li>Vegetariano</li>
+        <li>Jalapeño Mango Chicken</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <p>Fresh Bite Pizza is a newly opened restaurant in State College, PA, dedicated to serving up unforgettable flavors. Our mission is simple: serve fresh ingredients, bold combos, and a slice that students and locals crave.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p><strong>Address:</strong> 300 S Pugh St Apartment C101, State College, PA 16801, United States</p>
+      <p><strong>Phone:</strong> <a href="tel:+18147778550">+1 814-777-8550</a></p>
+      <p><strong>Email:</strong> <a href="mailto:Freshbitepizza4u@gmail.com">Freshbitepizza4u@gmail.com</a></p>
+    </div>
+  </section>
+
+  <section id="order">
+    <h2>Order Online</h2>
+    <p>Call us now at <a href="tel:+18147778550">814-777-8550</a> or email <a href="mailto:Freshbitepizza4u@gmail.com">Freshbitepizza4u@gmail.com</a> to place your order. Online ordering coming soon!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Fresh Bite Pizza. All rights reserved.</p>
+  </footer>
+</body>
+</html>
